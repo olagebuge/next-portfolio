@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+  min-height: calc(100dvh - 220px);
+}
+
+.wrapper{
+  width: 500px;
+  background-color: var(--bgSoft);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  border-radius: 5px;
+}
+
+@media (max-width:768px){
+  .container{
+    padding: 50px 0px 100px;
+  }
+}

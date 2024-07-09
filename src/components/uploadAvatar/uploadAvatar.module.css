@@ -1,0 +1,57 @@
+.imgUpdate{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 15px;  
+  width: 200px;
+}
+
+.imgContainer{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.imgUpdate h2{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.img{
+  border-radius: 5px;
+}  
+.imgUpdate button {
+  padding: 10px;
+  cursor: pointer;  
+  font-size: 16px;
+  border: 1px solid var(--bgDeep);
+  border-radius: 5px;
+  color: var(--bgDeep);
+  font-weight: bold;
+}
+
+.penContainer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#fff;
+  background-color:rgba(36, 36, 36, 0.8);
+  font-size: 0.8rem;
+}
+.penContainer p{
+  text-align: center;
+  width: 175px;
+  line-height: 28px;
+}
+
+.penContainer div{
+  background-color: var(--bg);
+  padding: 7px ;
+  border-radius:5px 0px 0px 0px;
+  color:#000;
+}

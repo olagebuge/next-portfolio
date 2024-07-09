@@ -1,0 +1,384 @@
+:root {
+  --bg: #e9e9e9;
+  --bgDeep: #536AAA;
+  --text: #4e4e4e;
+  --textSoft: #e5e5e5;
+  --textOrange: #dd7c2d;
+  --lightBlue: #7086C4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body {  
+  background:var(--bg);  
+  color: var(--text);
+  font-family: 'Noto sans TC';
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 2;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===============常用盒子=============== */
+.minHight{
+  min-height: calc(100dvh - 160px);
+}
+.container{
+  max-width: 1280px;
+  width:100%;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+.textContainer{
+  width: calc(100% - 300px);
+}
+.flex{
+  display: flex;
+  gap:30px;
+  align-items: center;  
+}
+.justify-center{
+  justify-content: center;
+}
+.flexBox{
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap:10px;
+}
+.alignBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+  padding: 0px 50px;
+}
+.modalHight{
+  height: calc(100dvh - 40%);
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.icongap{
+  gap:20px 30px;
+}
+
+.icon-container{
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.fix-size{
+  position: absolute;
+  object-fit: contain;
+}
+.relative{
+  position: relative;
+}
+.imageContainer{
+  position: relative;  
+  width: 120px;
+  height: 120px;
+}
+
+.imageContainerBig{
+  position: relative;  
+  width: 400px;
+  height: 300px;
+}
+.imageContainerRound{
+  position: relative;  
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.imageContainerRound img{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+.imageContainer img, .imageContainerBig img{
+  object-fit: cover;
+  border-radius: 10px;
+}
+.normalButton{
+  background-color: rgb(226, 92, 38);
+  color:#fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.05rem;
+}
+
+.normalButton-line{
+  border:1px solid rgb(226, 92, 38);
+  color:rgb(226, 92, 38);
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 10px;  
+}
+
+.deleteBtn{
+  background-color: rgb(144, 36, 19);
+  color:#fff;
+  padding:8px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.my-40{
+  margin: 40px 0px;
+}
+.text-orange{
+  color:rgb(226, 92, 38);
+  letter-spacing: 2px;
+}
+.text-gray{
+  color: rgb(147, 147, 147);
+  letter-spacing: 1px;
+}
+.items-center{
+  align-items: center;
+}
+
+/* ===============基礎設定=============== */
+
+.errorStatus {
+  padding: 10px 25px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: rgb(226, 92, 38);
+  border: 1.5px solid rgb(226, 92, 38);
+}
+
+.successStatus {
+  padding: 10px 25px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: rgb(39, 184, 39);
+  border: 1.5px solid rgb(39, 184, 39);
+}
+
+.tips {
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+
+.overlay {
+  width: 100%;
+  min-height: calc(100dvh - 220px);
+  height: 100%;
+  position: fixed;
+  background-color: rgba(25, 25, 25, 0.6);
+  left: 0px;
+  top: 0px;  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 999;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;  
+  width:70%;
+  height: 80%;
+  max-height: 800px;
+  background-color: #fff;
+  color: var(--text);
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 1000;
+}
+
+.modal label, .modal button, .modal h2{
+  width: 100%;
+  margin: 0 auto;
+}
+.modal h2{
+  margin-top: 20px;
+}
+
+.closeIcon{
+  font-size: 30px;
+  display: block;   
+}
+.closeIcon svg{
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 3px;
+}
+.closeIcon svg:hover{
+  background-color: rgb(255, 182, 87);  
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #D9BE8A !important;
+}
+
+/* ====================標題類型==================== */
+
+.h2Title{
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  letter-spacing: 8px;
+  font-family: 'Noto Sans TC';
+  font-weight: 500;
+  display: flex;
+  align-items: center;  
+  gap:20px;  
+}
+
+.h1Title{
+  font-size: 4rem;
+  letter-spacing: 5px;
+  font-weight: 400;  
+  margin-top: 10px;
+  margin-bottom:20px;   
+}
+.subtitle{
+  font-size: 2rem;  
+  color: var(--textOrange);  
+  padding-left: 10px;
+  letter-spacing: 3px;
+}
+
+.desc{
+  font-size: 1.05rem;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+  margin: 30px 0px;
+  padding-left: 10px;
+  font-family: 'Noto Sans TC';
+  width: 450px;
+  z-index: 5;
+}
+
+.loadContainer{
+  position: relative;  
+  width: 35px;
+  height: 60px;
+}
+/* LOAD樣式 */
+.loadBar1{
+  transform: rotate(0deg);
+  animation: loading 2s infinite;
+  position: absolute;
+}
+.loadBar1:nth-child(2){
+  animation-delay: 0.5s;
+}
+.loadBar1:last-child{
+  animation-delay: 0.75s;
+}
+
+.alignTitle{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.rowInput{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.rowInput label{
+  width: 80px;
+}
+
+.formContiner{
+  margin: 40px 0px;
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.rowInput input{
+  padding: 18px;
+  background-color: #E2D9CB;
+  border: none;
+  border-radius: 5px;
+  color: var(--textColor);
+  font-size: 16px;
+  width: calc(100% - 80px);
+}
+
+@keyframes loading{
+  0%{
+    transform: rotate(0deg);
+  }100%{
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 1380px) {
+  .h2Title{
+    font-size: 38px;
+    letter-spacing: 8px;
+  }
+}
+@media (max-width: 1024px) {
+ 
+  .h1Title{    
+    text-align: left;
+  }
+  .subtitle{   
+    text-align: left;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 768px) {  
+  
+  .desc{
+    width: 100%;
+    padding: 15px;
+    line-height: 30px; 
+    letter-spacing: 0px;
+    display: flex;    
+    margin: 0px;
+    justify-content: center; 
+  }
+  
+  .h1Title{
+    width: 100%;
+    font-size: 54px;
+    letter-spacing: 3px;
+  }
+
+  .h2Title{
+    align-items: flex-start;
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 48px;
+  }
+
+  
+}

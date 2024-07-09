@@ -1,0 +1,22 @@
+.icon_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;  
+  padding: 20px;
+  width: 120px;
+}
+
+.icon_center:hover{
+  background:linear-gradient(#e9e9e9 , #fff);
+  border-radius: 8px;  
+  box-shadow: 0px 15px 12px rgba(207, 206, 204, 1);
+}
+
+.icon_center p{
+  color:rgb(74, 79, 104);
+  font-size: 0.85rem;
+  letter-spacing:0.08rem;
+}
+
+

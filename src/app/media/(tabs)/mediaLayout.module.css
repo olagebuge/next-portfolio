@@ -1,0 +1,38 @@
+.container {
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100dvh - 220px);
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  
+  .container h1{
+    display: flex;
+    align-items: center;
+    gap:15px;
+  }
+  
+  .mediaHelp{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .mediaBlock{
+    display: flex;
+    flex-direction: column;  
+  }
+  .mediaBlock>div, .mediaBlock>form{
+    width: 100%;
+  }
+.tabsTitle{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;    
+  }
+  .tabsTitle a{
+    font-size: 18px;
+    font-weight: 400;
+    color:gray;
+    cursor: pointer;
+  }

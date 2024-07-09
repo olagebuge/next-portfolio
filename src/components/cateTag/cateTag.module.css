@@ -1,0 +1,60 @@
+.cateTag{
+    padding: 5px 10px;
+    border: 1px solid var(--bgDeep);
+    border-radius: 5px;
+    color:  var(--bgDeep)
+  }
+  .cateTag.active{    
+    background-color: var(--bgDeep);
+    color: #fff;
+  }
+
+  .cateTag.active::before{
+    content:'✔';
+  }
+  
+  .tagBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+  }
+
+  .tips{
+    font-size: 14px;
+    color:gray;
+    letter-spacing: 0.5px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+  }
+
+  .addnow{
+    padding: 8px 15px;
+    color:  var(--bgDeep);
+    border: 1px solid  var(--bgDeep);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .xmark{
+    align-self: flex-end;
+    font-size: 30px; 
+    cursor: pointer; 
+  }
+
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 80%;
+    max-width: 600px;
+    min-width: 300px;
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+
+  .formContainer h2{
+    margin: 20px 0px;
+  }
+  
+  

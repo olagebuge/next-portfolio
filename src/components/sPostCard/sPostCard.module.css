@@ -1,0 +1,37 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.top{
+  display: flex;
+}
+
+.imgContainer{
+  width: 120px;
+  height: 120px; 
+  position: relative;
+}
+
+.img{
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.date{
+  font-size: 12px;  
+  margin: auto;
+}
+
+.title{
+  width: 100%;
+  font-size: 16px;
+  line-height:24px;
+  margin-top: 10px; 
+  letter-spacing: 1px;
+}
+
+
+
