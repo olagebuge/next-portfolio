@@ -1,14 +1,7 @@
-import { getUsers, getPosts } from "@/lib/data";
+import { getUsers } from "@/lib/data";
 import styles from "./adminUsers.module.css";
 import Image from "next/image";
 import { deleteUser } from "@/lib/action";
-
-const postCounts = async (userId) => {
-  const posts = await getPosts();
-  const userPosts = posts.filter((post) => post.userId === userId);
-
-  return userPosts.length;
-};
 
 const AdminUsers = async () => {
   const users = await getUsers();
@@ -26,7 +19,7 @@ const AdminUsers = async () => {
               height={50}
             />
             <span className={styles.username}>{user.username}</span>
-            <span className={styles.postCounts}>{postCounts(user?.id)}篇</span>
+            
           </div>
           <form action={deleteUser}>
             <input type="hidden" name="id" value={user.id} />
