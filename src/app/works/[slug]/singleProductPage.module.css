@@ -10,7 +10,9 @@
 .container h1{
   margin-bottom: 0;
 }
-
+.imageBlock{
+  width: 60%;
+}
 .imgContainer {
   position: relative;
   width: 600px;  
@@ -122,9 +124,9 @@
 
 @media (max-width:1024px){
   .container {
-    max-width: 700px;
-    flex-direction: column;
+    max-width: 700px;    
     align-items: center;
+    flex-direction: column-reverse;
   }
   .details{
     width: 520px;
@@ -134,6 +136,9 @@
     font-size: 0.85rem;
     letter-spacing: 0;
     color:rgb(91, 97, 97)
+  }
+  .imageBlock{
+    width: 100%;
   }
 }
 
@@ -153,10 +158,11 @@
 
   .container{
     padding:40px 30px;
-    flex-direction: column-reverse;
+    
   }
   .golook{
     font-size: 1rem;
     border-width: 1px;
   }
+  
 }

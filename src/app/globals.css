@@ -356,7 +356,7 @@ a {
 
   .h2Title{
     width: clamp(300px, 90%, 900px);
-    align-items: flex-start;
+    align-items: start;
     font-size: 30px;
     letter-spacing: 3px;
     line-height: 48px;
@@ -416,6 +416,18 @@ a {
     font-size: 2.6rem;
     line-height: 1.6;
     letter-spacing: 2px;
+  }
+  .h2Title{
+    gap:5px;
+    letter-spacing: 4px;
+    font-size: 1.85rem;
+    align-items: center;    
+  }  
+  .tcTitle{
+    width: 100px;
+  }
+  .flexBox{
+    justify-content: flex-start;
   }
 }
 

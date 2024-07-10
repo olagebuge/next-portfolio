@@ -11,10 +11,10 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div className="minHight">
+    <div className={`minHight ${styles.cotainer}`}>
       <div className={`${styles.textContainer} container`}>
         <h1 className="h2Title">
-          歷程記錄<span className="subtitle">Experience</span>
+          <span className="tcTitle">歷程記錄</span><span className="subtitle">Experience</span>
         </h1>
         <div className="flexBox">
           國立臺灣科技大學

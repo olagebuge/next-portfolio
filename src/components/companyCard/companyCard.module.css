@@ -87,7 +87,6 @@
   transition: all 1s ease-in-out; 
 }
 
-
 .overflowContainer.show{
   max-height: 1000px; /* max-height可以讓transition發揮作用 */  
 }
@@ -102,8 +101,7 @@
   background:rgb(97, 117, 85);
   position: absolute;
   bottom: 0px;
-  margin-left: calc(-50% + 5px);
-  
+  margin-left: calc(-50% + 5px);  
   transition: all 1s ease-in-out;
 }
 
@@ -118,12 +116,59 @@
   width: calc(100% - 30px);
   margin: 0 auto;
 }
-
-
-
 .workContent ul{
     border-top: 1px solid #dd7c2d;
     border-bottom: 1px solid #dd7c2d;
     margin: 10px auto;
     padding: 20px 10px;
+}
+
+@media (max-width:1024px){
+  
+  .orangeGroup { 
+    width:10px;   
+    height:100%;
+    margin: 0px 0px 0px -20px;
+    order: -1;
+  }
+  .orangeLine, .soho .orangeLine{    
+    width: 2.5px;
+    height: 300px; 
+    left: 4px;
+    top:0px;  
+  }
+
+  .soho .orangeGroup {    
+    margin: 0px -20px 0px auto;
+  }  
+  
+  .orangeDot {
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #dd7c2d;
+    border-radius: 6px;
+    width: 10px;
+    height: 10px;
+    left: 0px;
+  }
+
+  .allDetail{
+    width:clamp(120px, 70% , 250px);
+    display: flex;
+    flex-direction: column;
+  }
+  .allDetail .date{
+    margin-top: -10px;
+  }
+  .workDetail{
+    margin: 0px 0px 50px;
+    gap:0px;   
+  }
+  .overflowContainer{
+    position: absolute;
+    right:5px;
+  }
+  .overflowContainer::before{
+    margin-left: 0px;
+  }
 }

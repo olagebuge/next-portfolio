@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./singleProductPage.module.css";
-import { getUser, getWorkBySlug } from "@/lib/data";
+import { getUser, getWorkBySlug, getMediaByUrl } from "@/lib/data";
 import Link from "next/link";
 import { auth } from "@/lib/auth";
 import { FaPen, FaArrowRight } from "react-icons/fa6";
@@ -9,6 +9,19 @@ import SliderShow from "@/components/sliderShow/SliderShow";
 const singleProductPage = async ({ params }) => {
   const { slug } = params;
   const product = await getWorkBySlug(slug);
+  
+  let mediaTitle = [];
+  const getMediaTitle = async () => {
+    for (const photo of product.photos) {
+      const media = await getMediaByUrl(photo);
+      if (media) {
+        mediaTitle.push(media.title);        
+      } else {
+        console.log(`找不到媒體: ${photo}`);
+      }
+    }
+  };
+  await getMediaTitle();
 
   const session = await auth();
   const foundUser = await getUser(session?.user.email);
@@ -61,7 +74,8 @@ const singleProductPage = async ({ params }) => {
         </div>
       </div>
 
-      <div>
+      <div  className={styles.imageBlock}>
+        {product.url !== "" ? (
         <a
           href={product.url}
           target="_blank"
@@ -69,10 +83,12 @@ const singleProductPage = async ({ params }) => {
           className={styles.golook}
         >
           前往查看網站 <FaArrowRight />
-        </a>
+        </a>) :""}
         {product.photos[0] !== "" ? (
-          product.url !== "" ? (
-          <SliderShow photos={product.photos}/>
+          product.url !== "" || product.photos.length >= 3 ? (            
+          <div>點選圖片看全圖
+            <SliderShow photos={product.photos} titles={mediaTitle}/>
+          </div>
         ):(
           product.photos.map((photo, index) => (
             <div key={index} className={styles.imgContainer}>

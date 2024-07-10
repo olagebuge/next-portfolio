@@ -83,7 +83,6 @@ export const getMediaByUrl = async (url) => {
   try {
     connectToDb();
     const media = await Media.findOne({url});
-
     return media;
   } catch (err) {
     console.log(err);
