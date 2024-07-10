@@ -1,6 +1,5 @@
 "use client";
 
-
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
 
@@ -25,8 +24,6 @@ const Links = () => {
           <NavLink item={link} key={link.title} />
         ))}       
       </div>
-     
-     
     </div>
   );
 };

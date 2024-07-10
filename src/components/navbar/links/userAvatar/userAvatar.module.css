@@ -3,7 +3,7 @@
   display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 
   .menuButton,
   .mobileLinks {
@@ -17,12 +17,13 @@
     position: absolute;
     z-index: 1000;    
     top: 80px;
-    right: 0px;
-    border-radius: 5px 0px 0px 5px;
-    padding: 10px 20px 40px;
+    right: 10px;
+    border-radius: 8px;
+    padding: 10px 10px 30px;
   }
 
-  .xmark{
-    margin-bottom: 20px;
-  }
+  .xmark{    
+    color:var(--textOrange);
+    font-size: 1.25rem;
+  } 
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35.02 32.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_未命名漸層_16-3);
+      }
+
+      .cls-2 {
+        fill: #d57930;
+      }
+
+      .cls-3 {
+        fill: url(#_未命名漸層_16);
+      }
+
+      .cls-4 {
+        fill: url(#_未命名漸層_16-2);
+      }
+    </style>
+    <linearGradient id="_未命名漸層_16" data-name="未命名漸層 16" x1="127.07" y1="2.89" x2="162.07" y2="2.89" gradientTransform="translate(-127.07 -1.39)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d57930"/>
+      <stop offset=".13" stop-color="#d57930" stop-opacity=".98"/>
+      <stop offset=".27" stop-color="#d57930" stop-opacity=".92"/>
+      <stop offset=".41" stop-color="#d57930" stop-opacity=".83"/>
+      <stop offset=".55" stop-color="#d57930" stop-opacity=".69"/>
+      <stop offset=".69" stop-color="#d57930" stop-opacity=".51"/>
+      <stop offset=".83" stop-color="#d57930" stop-opacity=".3"/>
+      <stop offset=".97" stop-color="#d57930" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#d57930" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_未命名漸層_16-2" data-name="未命名漸層 16" y1="-4.81" x2="152.96" y2="-4.81" gradientTransform="translate(-117.96 14.02)" xlink:href="#_未命名漸層_16"/>
+    <linearGradient id="_未命名漸層_16-3" data-name="未命名漸層 16" y1="-12.52" x2="143.11" y2="-12.52" gradientTransform="translate(-108.11 29.42)" xlink:href="#_未命名漸層_16"/>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g>
+      <g>
+        <path class="cls-2" d="m.03,24.88h1.44l1.27,3.52c.16.46.3.94.46,1.41h.04c.16-.47.29-.96.45-1.41l1.25-3.52h1.44v7.19h-1.17v-3.29c0-.66.1-1.62.16-2.29h-.04l-.58,1.67-1.18,3.23h-.76l-1.19-3.23-.57-1.67h-.04c.06.67.16,1.62.16,2.29v3.29H.03v-7.19Z"/>
+        <path class="cls-2" d="m10.97,24.88h4.33v1.07h-3.05v1.84h2.59v1.07h-2.59v2.13h3.16v1.07h-4.44v-7.19Z"/>
+        <path class="cls-2" d="m19.64,24.88h1.31l2.24,4.04.74,1.54h.04c-.06-.74-.16-1.65-.16-2.46v-3.12h1.21v7.19h-1.31l-2.24-4.05-.74-1.53h-.04c.06.76.16,1.63.16,2.43v3.15h-1.21v-7.19Z"/>
+        <path class="cls-2" d="m29.57,28.92v-4.04h1.28v4.14c0,1.57.59,2.08,1.46,2.08s1.49-.51,1.49-2.08v-4.14h1.23v4.04c0,2.36-1.05,3.29-2.72,3.29s-2.73-.92-2.73-3.29Z"/>
+      </g>
+      <g>
+        <rect class="cls-3" width="35" height="3" transform="translate(35 3) rotate(180)"/>
+        <rect class="cls-4" x="9.11" y="7.7" width="25.89" height="3" transform="translate(44.11 18.41) rotate(180)"/>
+        <rect class="cls-1" x="18.96" y="15.41" width="16.04" height="3" transform="translate(53.96 33.81) rotate(180)"/>
+      </g>
+    </g>
+  </g>
+</svg>

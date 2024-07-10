@@ -10,9 +10,6 @@
 .container h1{
   margin-bottom: 0;
 }
-.noPhoto {
-  flex-direction: row-reverse;  
-}
 
 .imgContainer {
   position: relative;
@@ -39,7 +36,7 @@
 .golook{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap:5px;
   font-size: 1.2rem;
   letter-spacing: 1.2px;  
@@ -48,11 +45,12 @@
   padding: 5px 0px;  
   width: 150px;
   margin-left: auto;
-  transition: 0.3s;
+  transition: 0.5s;
   line-height: 1.8;
+  width: 100%;  
 }
 .golook:hover{
-  line-height: 1.4;
+  line-height: 1.4;  
 }
 .golook svg{
   transition: 0.3s;
@@ -103,6 +101,24 @@
   line-height: 2rem;
 }
 
+.sTitle{
+  font-weight: bold;
+  padding-right: 8px;
+  position: relative;
+}
+
+.sTitle::after{
+  content: '';
+  background-color: rgb(255, 212, 138);
+  height: 8px;
+  width: 90%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  left:0px;
+  bottom: -2px;
+  border-radius: 5px;
+}
+
 @media (max-width:1024px){
   .container {
     max-width: 700px;
@@ -112,6 +128,11 @@
   .details{
     width: 520px;
     margin-top: 0px;
+  }
+  .noPhotos{
+    font-size: 0.85rem;
+    letter-spacing: 0;
+    color:rgb(91, 97, 97)
   }
 }
 
@@ -123,5 +144,18 @@
   .details{
     width:100%;
     margin-top: 0px;
+    font-size: 0.92rem;    
+  }
+  .desc{
+    font-size: 0.92rem;
+  }
+
+  .container{
+    padding:40px 30px;
+    flex-direction: column-reverse;
+  }
+  .golook{
+    font-size: 1rem;
+    border-width: 1px;
   }
 }

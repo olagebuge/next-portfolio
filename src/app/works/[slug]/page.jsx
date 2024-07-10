@@ -16,9 +16,7 @@ const singleProductPage = async ({ params }) => {
 
   return (
     <div
-      className={`${styles.container} ${
-        product.photos[0] !== "" ? "" : styles.noPhoto
-      }`}
+      className={`${styles.container}`}
     >
       <div className={styles.details}>
 
@@ -34,13 +32,13 @@ const singleProductPage = async ({ params }) => {
             </Link>
           )}
         </div>
-        <span>專案期間：{product.duration}</span>
-        <span>職責：{product.duty}</span>
-        <span>使用工具：{product.tools}</span>
+        <p><span className={styles.sTitle}>執行期間 </span>{product.duration}</p>
+        <p><span className={styles.sTitle}>負責職位 </span>{product.duty}</p>
+        <p><span className={styles.sTitle}>使用工具 </span>{product.tools}</p>
         <div className={styles.bottomBlock}>
           {product.desc && (
             <div>
-              <h3>專案敘述</h3>
+              <h3><span className={styles.sTitle}>專案敘述</span></h3>
               <p
                 className={styles.desc}
                 dangerouslySetInnerHTML={{ __html: product.desc }}
@@ -85,7 +83,7 @@ const singleProductPage = async ({ params }) => {
                 alt="專案配圖"
               />
             </div>
-            <p>職責非設計師，無配圖</p>
+            <p className={styles.noPhotos}>非設計師，無配圖</p>
           </>
         )}
         <p>

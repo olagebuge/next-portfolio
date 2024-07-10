@@ -4,7 +4,8 @@ import { useState } from "react";
 import ProfileSubMenu from "../profileSubMenu/profileSubMenu";
 import NavLink from "../navLink/navLink";
 import styles from "./userAvatar.module.css";
-import { FaXmark, FaEllipsis } from "react-icons/fa6";
+import Image from "next/image";
+import { FaXmark } from "react-icons/fa6";
 
 const links =[
   {
@@ -28,10 +29,9 @@ const UserAvatar = ({ foundUser }) => {
         </>
       ) : (
         <>
-          <FaEllipsis
-            className={styles.menuButton}
-            onClick={() => setOpen((prev) => !prev)}
-          />
+          <div onClick={() => setOpen((prev) => !prev)} className={`pointer ${styles.menuButton}`}>            
+            <Image src="/menu.svg" width={48} height={48} alt="hamburger"/>
+          </div>
           {open && (
             <div className="overlay" onClick={() => setOpen(false)}>
             <div className={styles.mobileLinks}>
