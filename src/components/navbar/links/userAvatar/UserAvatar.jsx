@@ -6,22 +6,16 @@ import NavLink from "../navLink/navLink";
 import styles from "./userAvatar.module.css";
 import { FaXmark, FaEllipsis } from "react-icons/fa6";
 
-const links =[{
-  title: "關於我們",
-  path: "/about",
-},
-{
-  title: "祭拜殿堂",
-  path: "/blog",
-},
-{
-  title: "商品選購",
-  path: "/product",
-},
-{
-  title: "聯絡我們",
-  path: "/contact",
-}]
+const links =[
+  {
+    title: "經歷",
+    path: "/info",
+  },  
+  {
+    title: "作品",
+    path: "/works",
+  }
+]
 
 const UserAvatar = ({ foundUser }) => {
   const [open, setOpen] = useState(false);

@@ -7,10 +7,17 @@
 }
 .logoContainer{
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
 }
 
 .logoContainer img{
   position: absolute;
+}
+
+@media (max-width:767px){
+  .logoContainer{    
+    width: 48px;
+    height: 48px;
+  }
 }

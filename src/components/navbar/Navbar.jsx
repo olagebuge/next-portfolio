@@ -17,8 +17,7 @@ const Navbar = async () => {
       <Link href="/">
       <div className={styles.logoContainer}>
         <Image src="/android-chrome-192x192.png" fill quality={100} alt="首頁連結圖片"/>
-      </div>
-        
+      </div>        
       </Link>   
       <Links/>      
       <UserAvatar foundUser={foundUser}/>

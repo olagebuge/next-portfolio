@@ -19,4 +19,22 @@
   letter-spacing:0.08rem;
 }
 
+.flexStart{
+  display: flex;
+  align-items: flex-start;  
+  gap:30px;
+}
+
+@media (max-width:767px){
+  .icon_center{
+    width: 90px;
+    padding: 20px 10px;
+    gap:5px
+  }
+  .icon_center p{
+    font-size: 0.8rem;
+    letter-spacing:0.05rem;
+  }
+}
+
 
