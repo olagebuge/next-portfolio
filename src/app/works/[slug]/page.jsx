@@ -3,9 +3,8 @@ import styles from "./singleProductPage.module.css";
 import { getUser, getWorkBySlug } from "@/lib/data";
 import Link from "next/link";
 import { auth } from "@/lib/auth";
-import { FaPen,FaArrowRight } from "react-icons/fa6";
-
-
+import { FaPen, FaArrowRight } from "react-icons/fa6";
+import SliderShow from "@/components/sliderShow/SliderShow";
 
 const singleProductPage = async ({ params }) => {
   const { slug } = params;
@@ -15,30 +14,35 @@ const singleProductPage = async ({ params }) => {
   const foundUser = await getUser(session?.user.email);
 
   return (
-    <div
-      className={`${styles.container}`}
-    >
+    <div className={`${styles.container}`}>
       <div className={styles.details}>
-
         <div className="flex">
           <h1 className={styles.productTitle}>《{product.title}》</h1>
           {foundUser?.isAdmin && (
-            <Link
-              href={`/works/${slug}/edit`}
-              className={styles.editIcon}
-            >
+            <Link href={`/works/${slug}/edit`} className={styles.editIcon}>
               <FaPen />
               編輯
             </Link>
           )}
         </div>
-        <p><span className={styles.sTitle}>執行期間 </span>{product.duration}</p>
-        <p><span className={styles.sTitle}>負責職位 </span>{product.duty}</p>
-        <p><span className={styles.sTitle}>使用工具 </span>{product.tools}</p>
+        <p>
+          <span className={styles.sTitle}>執行期間 </span>
+          {product.duration}
+        </p>
+        <p>
+          <span className={styles.sTitle}>負責職位 </span>
+          {product.duty}
+        </p>
+        <p>
+          <span className={styles.sTitle}>使用工具 </span>
+          {product.tools}
+        </p>
         <div className={styles.bottomBlock}>
           {product.desc && (
             <div>
-              <h3><span className={styles.sTitle}>專案敘述</span></h3>
+              <h3>
+                <span className={styles.sTitle}>專案敘述</span>
+              </h3>
               <p
                 className={styles.desc}
                 dangerouslySetInnerHTML={{ __html: product.desc }}
@@ -58,7 +62,18 @@ const singleProductPage = async ({ params }) => {
       </div>
 
       <div>
+        <a
+          href={product.url}
+          target="_blank"
+          rel="nofollow norefferer nooppener"
+          className={styles.golook}
+        >
+          前往查看網站 <FaArrowRight />
+        </a>
         {product.photos[0] !== "" ? (
+          product.url !== "" ? (
+          <SliderShow photos={product.photos}/>
+        ):(
           product.photos.map((photo, index) => (
             <div key={index} className={styles.imgContainer}>
               <Image
@@ -70,7 +85,7 @@ const singleProductPage = async ({ params }) => {
                 alt="專案配圖"
               />
             </div>
-          ))
+          )))
         ) : (
           <>
             <div className={styles.imgContainer2}>
@@ -83,19 +98,9 @@ const singleProductPage = async ({ params }) => {
                 alt="專案配圖"
               />
             </div>
-            <p className={styles.noPhotos}>非設計師，無配圖</p>
+            <p className={styles.noPhotos}>職位非設計師，無配圖</p>
           </>
         )}
-        <p>
-          <a
-            href={product.url}
-            target="_blank"
-            rel="nofollow norefferer nooppener"
-            className={styles.golook}
-          >
-            前往查看網站 <FaArrowRight />
-          </a>
-        </p>
       </div>
     </div>
   );

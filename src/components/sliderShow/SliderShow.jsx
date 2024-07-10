@@ -8,7 +8,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const SliderShow = ({ photos, isProduct}) => {
+const SliderShow = ({ photos}) => {
   return (
     <div className={styles.mySwiperBlock}>
       <Swiper
@@ -19,14 +19,11 @@ const SliderShow = ({ photos, isProduct}) => {
       >        
         {photos[0] !== "" &&
           photos.map((photo) => (
-            <SwiperSlide className={`${styles.swiperContainer} ${isProduct ? styles.cover : ""}`} key={photo}>
-              <Image src={photo} fill alt="幻燈片圖片" className={styles.img}/>
+            <SwiperSlide className={styles.swiperContainer} key={photo}>
+              <Image src={photo} fill sizes="(max-width: 768px) 100vw, 600px" alt="幻燈片圖片" className={styles.img}/>
             </SwiperSlide>
           ))}
-      </Swiper>
-      {!isProduct && <div className={styles.intro}>
-        <h4>專利設計款</h4>一體成形、多色可選
-      </div>}
+      </Swiper>      
     </div>
   );
 };

@@ -51,7 +51,9 @@ const Home = () => {
                   className="colorbg"
                 />
               </div>
-              <Link href="works" className="words">GO<span className="arrow">→</span></Link>
+              <Link href="works" className="words">
+                <span className="desc">點我</span>GO<span className="arrow">→</span>
+              </Link>
             </div>
           </div>
         </div>

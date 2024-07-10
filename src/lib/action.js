@@ -51,8 +51,8 @@ export const deleteUser = async (formData) => {
 
   try {
     connectToDb();
-
-    await Product.deleteMany({ userId: id });
+    
+    //await Product.deleteMany({ userId: id });
     await User.findByIdAndDelete(id);
     console.log("從db移除");
     revalidatePath("/admin");

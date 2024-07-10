@@ -448,14 +448,23 @@ a {
   animation: blurmotion 7s linear infinite alternate;
 }
 .words{
-  color: #fff;
+  color: var(--textOrange);
   position: absolute;
-  text-shadow: 0px 0px 8px rgba(237, 187, 146, 0.293);
+  text-shadow: 0px 0px 8px rgba(255, 248, 225, 0.521);
   top:calc(50% - 80px);
-  right:50px;
+  right:40px;
   font-weight: 700;
-  opacity: 0.75;
-  font-size: 3rem;  
+  opacity: 0.8;
+  font-size: 2.75rem;
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  width:160px;
+  gap:3px;
+}
+.words .desc{
+  padding: 0px;
+  margin: 5px 0px 0px;
 }
 .words .arrow{
   transition: 0.4s;
