@@ -4,8 +4,8 @@
 }
 
 .swiperContainer .img{
-    object-fit: cover;
-    object-position: left top;
+    object-fit: cover; 
+    object-position: top center;  
 }
 .imgTitle{
     position: absolute;
