@@ -19,7 +19,7 @@ export const WORKSTEPS = [
       </ul>`,
   },
   {
-    duty: "網站視覺設計兼客服",
+    duty: "網站視覺設計",
     time: "2016/02 - 2016/09",
     company: "富格曼科技",
     type: "平面設計／美編",
@@ -83,7 +83,7 @@ export const SOHOSTEPS = [
             </ul> `,
   },  
   {
-    duty: "視覺設計、網站工程師",
+    duty: "設計兼網站工程師",
     time: "2018/01~仍在職",
     company: "日月柴工房",
     type: "美術設計",
