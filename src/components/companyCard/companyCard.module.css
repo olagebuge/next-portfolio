@@ -131,12 +131,14 @@
     margin: 0px 0px 0px -20px;
     order: -1;
   }
+  
   .orangeLine, .soho .orangeLine{    
     width: 2.5px;
     height: 300px; 
-    left: 4px;
+    left: 3.5px;
     top:0px;  
   }
+  
 
   .soho .orangeGroup {    
     margin: 0px -20px 0px auto;
@@ -152,13 +154,29 @@
     left: 0px;
   }
 
+  .soho .lookMore{
+    order: -1;
+  }
+  
+  .lookMore .orangeArrow{
+    width:100%;    
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    margin-top: -5px;
+  }
+  
   .allDetail{
-    width:clamp(120px, 70% , 250px);
+    width:clamp(80px, 50% , 120px);
     display: flex;
     flex-direction: column;
   }
+  .workDetail h3{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
   .allDetail .date{
     margin-top: -10px;
+    font-size: 0.75rem;
   }
   .workDetail{
     margin: 0px 0px 50px;
@@ -170,5 +188,8 @@
   }
   .overflowContainer::before{
     margin-left: 0px;
+  }
+  .soho .overflowContainer::before{
+    margin-left:calc(-100% + 5px);    
   }
 }

@@ -156,7 +156,7 @@
     padding-top: 20px;    
   }
   .stepWrap.soho{
-    width: 100%;
+    width: 100%;   
   }
 
   .stepWrap>li{
@@ -168,6 +168,7 @@
   .stepWrap.soho>li{
     width:100% !important;
     text-align: right;
+    justify-content: flex-end;
   }
 
   .introImg{
@@ -179,6 +180,9 @@
   }  
   .flexBall:last-child{
     order:-1;
+  }
+  .flexBall.move{
+    top:-60px;
   }
   .textContainer{
     order:-1;

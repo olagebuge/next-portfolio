@@ -158,11 +158,15 @@
 
   .container{
     padding:40px 30px;
+    gap:30px;
     
   }
   .golook{
     font-size: 1rem;
     border-width: 1px;
+  }
+  .imgContainer{
+    width: 100%;
   }
   
 }

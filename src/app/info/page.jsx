@@ -23,7 +23,7 @@ const AboutPage = () => {
         </div>
         <h3 className={styles.deco}>希望職稱 = 前端工程師</h3>
       </div>
-      <div className={styles.flexBall}>
+      <div className={`${styles.flexBall} ${styles.move}`}>
         <div className={`${styles.moveBall} ${styles.right}`}>
           <Image
             src="/colorfulbg.png"

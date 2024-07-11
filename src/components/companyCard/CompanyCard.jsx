@@ -20,7 +20,7 @@ const CompanyCard = ({ soho, time, duty, company, content, desc }) => {
         </div>
       </div>
 
-      <div onClick={() => setOpen((prev) => !prev)}>
+      <div onClick={() => setOpen((prev) => !prev)} className={styles.lookMore}>
         <span className={styles.orangeArrow}>
           <FaCaretDown />
           看內容
