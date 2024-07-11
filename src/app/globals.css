@@ -424,7 +424,7 @@ a {
     align-items: center;    
   }  
   .tcTitle{
-    width: 100px;
+    width: 80px;
   }
   .flexBox{
     justify-content: flex-start;

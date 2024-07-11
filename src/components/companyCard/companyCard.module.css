@@ -134,11 +134,10 @@
   
   .orangeLine, .soho .orangeLine{    
     width: 2.5px;
-    height: 300px; 
+    height: 180px; 
     left: 3.5px;
     top:0px;  
-  }
-  
+  }  
 
   .soho .orangeGroup {    
     margin: 0px -20px 0px auto;
@@ -162,26 +161,35 @@
     width:100%;    
     font-size: 0.75rem;
     padding: 3px 10px;
-    margin-top: -5px;
+    margin-top: -10px;
   }
   
   .allDetail{
-    width:clamp(80px, 50% , 120px);
+    width:clamp(80px, 50% , 125px);
     display: flex;
     flex-direction: column;
-  }
-  .workDetail h3{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .allDetail .date{
-    margin-top: -10px;
-    font-size: 0.75rem;
   }
   .workDetail{
     margin: 0px 0px 50px;
     gap:0px;   
   }
+  .workDetail h3{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+  }
+  .workDetail span{
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  li.soho:first-child .workDetail{    
+    margin-left:-70px;
+  }
+  .allDetail .date{
+    margin-top: -10px;
+    font-size: 0.75rem;
+  }
+  
   .overflowContainer{
     position: absolute;
     right:5px;

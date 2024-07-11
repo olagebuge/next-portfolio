@@ -35,10 +35,11 @@
   }
 }
 
-@media screen and (max-width:768px){
+@media (max-width:767px){
   .container{
-    height: 220px;
+    height: 100px;
     flex-direction: column;
+    margin: 0px auto;    
   }
   .text{
     display: flex;
