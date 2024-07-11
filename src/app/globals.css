@@ -104,10 +104,21 @@ a {
 }
 .imageContainerRound{
   position: relative;  
+  width: 208px;
+  height: 208px;  
+  margin-top: 40px; 
+}
+.imageContainerRound::after{
+  content: '';
+  background-color: #dd7c2d;
+  display: block;
+  border-radius: 50%;
   width: 200px;
   height: 200px;
-  border-radius: 50%; 
-  margin-top: 40px; 
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  z-index: 0;
 }
 
 .imageContainerRound img{
@@ -116,6 +127,7 @@ a {
   height: 200px;
   object-fit: cover;
   border-radius: 50%; 
+  z-index: 1;
 }
 
 .imageContainer img, .imageContainerBig img{
@@ -383,6 +395,21 @@ a {
     height: 50px;
   }
 
+  .imageContainerRound{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+  }
+  .imageContainerRound::after{
+    width: 150px;
+    height: 150px;
+  }
+  .imageContainerRound img{
+    width: 158px;
+    height: 158px;
+  }
+
+
 }
 
 @media (max-width: 767px) {  
@@ -390,17 +417,7 @@ a {
     padding-top: 30px;
   }
 
-  .imageContainerRound{
-    width: 160px;
-    height: 160px;
-    margin: 0 auto;
-  }
-
-  .imageContainerRound img{
-    width: 160px;
-    height: 160px;
-  }
-
+  
   .desc{
     width: 100%;
     padding: 15px;

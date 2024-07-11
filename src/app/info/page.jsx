@@ -5,7 +5,7 @@ import { WORKSTEPS, SOHOSTEPS } from "@/constants";
 import CompanyCard from "@/components/companyCard/CompanyCard";
 
 export const metadata = {
-  title: "履歷 | INFO",
+  title: "歷程記錄",
   description: "我的工作經歷",
 };
 
