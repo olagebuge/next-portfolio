@@ -28,7 +28,7 @@ const Home = () => {
         <div className={`container ${styles.flexStart}`}>
           <div className="imageContainerRound">
             <Image
-              src="/my_avatar.webp"
+              src="/my_avatar.jpg"
               width={200}
               height={200}
               quality={100}
