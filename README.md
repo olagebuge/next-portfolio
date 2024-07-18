@@ -1,5 +1,5 @@
 # Next.js全端履歷
-前後端皆為Next.js 14製作，佈署於Vercel
+前後端皆為Next.js 14製作，佈署於Vercel，
 網址為:https://next-portfolio-phi-black.vercel.app/
 
 ## 啟動方式
@@ -26,10 +26,10 @@ npm run dev
 ```
 ## 資料表
 
-1. 使用者(User)-用於登入驗證
+1. 使用者(User)–用於登入驗證
 2. 媒體(Media)–有單獨的媒體相簿
-3. 專案(Product)-專案內容有1張封面及多張配圖，從媒體相簿中拿取
-4. 類別(Category)-專案可以有多個類別
+3. 專案(Product)–專案內容有1張封面及多張配圖，從媒體相簿中拿取
+4. 類別(Category)–專案可以有多個類別
 
 ## 佈署
 佈署之前，讓ESlint檢查錯誤
