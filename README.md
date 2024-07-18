@@ -46,7 +46,6 @@ npm run build
 # public/uploads/*
 .pnp.js
 .yarn/install-state.gz
-.gitignore
 
 # testing
 /coverage

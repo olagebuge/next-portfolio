@@ -36,10 +36,10 @@ const Home = () => {
             />
           </div>
           <div className="textContainer">
-            <h1 className="h1Title">Hello, 我是Yummy</h1>
+            <h1 className="h1Title"><span className="subtitle">最佳組合</span> 全端ｘ資深視覺</h1>
             <p className="z5">
-              1990年出生於台中市，我是近一兩年透過購買線上課程，自學Node.js、React.js、以及Next.js等javasript框架的『前』視覺設計師。           
-              另外在轉職過程中，也陸續接了一些網站製作外包，不過案件委託仍以wordpress居多，請前往觀看我的作品。
+              我是Yummy，我在網頁視覺設計領域有多年經驗，也使用Node.js、express、React.js、Next.js等框架建構及佈署網站，
+              更熟悉wordpress及Google各項服務的運用，詳細內容請看<a href="https://github.com/olagebuge" className="text-orange">gitHub</a>或專案介紹頁。
             </p>
             <div className="flexBall">
               <div className="moveBall">
