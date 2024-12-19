@@ -1,0 +1,310 @@
+.cotainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: clip;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+
+}
+
+.stepWrap {
+  display: flex;
+  align-items: flex-start;
+  font-style: 'Noto Sans TC';
+  padding: 35px 0px;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.stepWrap>li {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.stepWrap.soho {
+  width: 50%;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.introImg {
+  margin-left: auto;
+  margin-top: -40px;
+}
+
+.introImg img {
+  object-fit: contain;
+}
+
+.stepWrap.soho>li:first-child {
+  width: 40%;
+}
+
+.stepWrap.soho>li:last-child {
+  width: 60%;
+}
+
+.duration {
+  color: rgb(200, 163, 95);
+  font-style: italic;
+  padding: 0px 15px;
+}
+
+.flexBall {
+  display: flex;
+  align-items: flex-start;
+  gap: 0px;
+  width: 100%;
+  position: relative;
+}
+
+.moveBall {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  top: -100px;
+  left: -150px;
+  border-radius: 50%;
+  overflow: hidden;
+  filter: blur(20px);
+  animation: blurmotion 7s linear infinite alternate;
+}
+
+.moveBall.right {
+  left: auto;
+  top: -70px;
+  right: -150px;
+  animation: none;
+  animation: blurmotion2 8s linear infinite alternate;
+}
+
+.words {
+  color: #fff;
+  position: absolute;
+  text-shadow: 0px 0px 8px rgba(237, 187, 146, 0.293);
+  top: 30px;
+  left: 30px;
+  font-weight: 700;
+  opacity: 0.75;
+  font-size: 3rem;
+}
+
+.words.right {
+  left: auto;
+  right: 30px;
+  top: 60px;
+}
+
+.colorbg {
+  position: absolute;
+  animation: moveBall 5s linear infinite alternate;
+  top: calc(50% - 400px);
+  left: calc(50% - 400px);
+}
+
+.moveBall.right .colorbg {
+  animation-delay: 2s;
+}
+
+.deco {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 2.5px;
+}
+
+.deco::before {
+  content: '';
+  width: 50%;
+  height: 15px;
+  background-color: rgb(255, 212, 138);
+  bottom: 0px;
+  right: 0px;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+}
+
+@keyframes blurmotion {
+  0% {
+    filter: blur(20px);
+    top: -100px;
+    left: -150px;
+  }
+
+  30% {
+    filter: blur(10px);
+    top: -80px;
+    left: -80px;
+  }
+
+  100% {
+    filter: blur(40px);
+    top: -160px;
+    left: -40px;
+  }
+}
+
+@keyframes blurmotion2 {
+  0% {
+    filter: blur(20px);
+    top: -70px;
+    right: -150px;
+  }
+
+  30% {
+    filter: blur(10px);
+    top: -120px;
+    right: -180px;
+  }
+
+  100% {
+    filter: blur(40px);
+    top: -60px;
+    right: -70px;
+  }
+}
+
+@keyframes moveBall {
+  0% {
+    top: calc(50% - 600px);
+    left: calc(50% - 600px);
+  }
+
+  50% {
+    top: calc(50% - 250px);
+    left: calc(50% - 350px);
+  }
+
+  100% {
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
+  }
+
+}
+
+@media (max-width:1024px) {
+  .stepWrap {
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+
+  .stepWrap.soho {
+    width: 100%;
+  }
+
+  .stepWrap>li {
+    width: 100%;
+    text-align: left;
+    padding: 0px 40px;
+    display: flex;
+  }
+
+  .stepWrap.soho>li {
+    width: 100% !important;
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  .introImg {
+    margin-right: auto;
+    z-index: 2;
+  }
+
+  .flexBall:last-child {
+    order: -1;
+  }
+
+  .flexBall.move {
+    top: -60px;
+  }
+
+  .textContainer {
+    order: -1;
+    z-index: 2;
+  }
+
+  .moveBall {
+    width: 200px;
+    height: 200px;
+    left: auto;
+    top:0px;
+    right: -50px;     
+  }
+
+  .moveBall.right {    
+    right: auto;
+    left: -50px; 
+    top:60px; 
+  }
+
+  .words{
+    font-size: 2.2rem;
+    left: auto;
+    right: 20px;
+    top:0px;
+  }
+
+  .words.right{
+    right: auto;
+    left:20px;
+    top:130px;
+  }
+
+  .duration {
+    padding: 0px;
+  }
+
+  @keyframes blurmotion {
+    0% {
+      filter: blur(20px);
+      top:-100px;
+    }
+    30% {
+      filter: blur(35px);
+      top:-80px;
+    }
+    100% {
+      filter: blur(15px); 
+      top:-70px;     
+    }
+  }
+
+  @keyframes blurmotion2 {
+    0% {
+      filter: blur(35px);
+      top: 60px;
+    }  
+    30% {
+      filter: blur(15px);
+      top: 80px;
+    }
+    100% {
+      filter: blur(20px);
+      top: 70px;
+      
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .introImg img {
+    width: 150px;
+    height: 200px;
+  }
+}
