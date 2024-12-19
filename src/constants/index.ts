@@ -67,6 +67,19 @@ export const WORKSTEPS = [
             <li>8.影片剪輯</li>
             </ul> `,
   },
+  {
+    duty: "網站設計師、網站工程師",
+    time: "2024/09~至今",
+    company: "默聲創意有限公司",
+    type: "網站設計師、網站工程師",
+    desc: "從設計到建置，服務多樣化客戶",
+    content: `<ul>
+            <li>1.使用wordpress佈景主題切版</li>
+            <li>2.HTML、CSS、JS網頁前端製作</li>
+            <li>3.與專案經理溝通、製作網站UI視覺設計</li>
+            <li>4.網站維運</li>
+            </ul> `,
+  },
 ];
 export const SOHOSTEPS = [  
   {

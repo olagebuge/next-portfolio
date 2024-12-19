@@ -75,14 +75,20 @@
   height: 300px;
   background-color: #fff;
 }
-.imgContainer {
+
+.productContainer .imgContainer {
   position: absolute;
   width: 400px;
   height: 300px;
 }
-.imgContainer img {
+.productContainer .imgContainer img {
   border-radius: 25px;
   object-fit: cover;
+  transition: all 0.3s;
+}
+
+.productContainer:hover .imgContainer img {
+  transform: scale(1.04);
 }
 
 .productContainer h3{
